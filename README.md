@@ -2,7 +2,7 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/43851024-320ba930-9aff-11e8-8493-ee547c6af349.gif "Trained Agent"
 
-# Project 2 - Udacity DRL: Continuos Control
+# Project 2 - Udacity DRL: Continuous Control
 
 ## Project Details
 
@@ -18,7 +18,7 @@ The version used in this project uses 20 replicas of the arm and to be considere
 
 - In particular, agents must obtain an average score of +30 (more than 100 consecutive episodes and over all agents). Specifically,
 - After each episode, the rewards that each agent receives are added and then the average of these 20 scores is taken.
-- This produces an ** average score ** for each episode (where the average is over all 20 agents).
+- This produces an **average score** for each episode (where the average is over all 20 agents).
 
 The environment is considered resolved when the average (more than 100 episodes) of these average scores is at least +30.
 
