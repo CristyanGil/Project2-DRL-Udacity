@@ -17,13 +17,13 @@ The algorithm used in this project to solve the [environment](https://s3-us-west
 
 ### Deep Deterministic Policy Gradient (DDPG)
 
-One of the typical approaches when solving problems using reinforcement learning (**RL**) is to estimate the optimal action-value function (__q*__) that can be used to obtain the optimal policy (__$\pi$*__) that maps states to actions. This policy tells the agent how to act depending on the current state to get the maximum possible return. This approach is known as **Value-Based Methods**.
+One of the typical approaches when solving problems using reinforcement learning (**RL**) is to estimate the optimal action-value function (__q*__) that can be used to obtain the optimal policy (__&pi;*__) that maps states to actions. This policy tells the agent how to act depending on the current state to get the maximum possible return. This approach is known as **Value-Based Methods**.
 
 However one question arises:
 
-- Why do we have to estimate __q*__ instead of estimating  __$\pi$*__ directly?. 
+- Why do we have to estimate __q*__ instead of estimating  __&pi;*__ directly?. 
 
-Well, this is the question that tries to solve the approach known as  **Policy-Based Methods** that uses algorithms like [REINFORCE](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf) and Proximal Policy Optimization [PPO](https://arxiv.org/pdf/1707.06347.pdf) to estimate directly __$\pi$*__. Another advantage of using this approach is that we can solve environments with continuous action spaces, unlike **Q-Learning** is no longer limited to discrete action spaces.
+Well, this is the question that tries to solve the approach known as  **Policy-Based Methods** that uses algorithms like [REINFORCE](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf) and Proximal Policy Optimization [PPO](https://arxiv.org/pdf/1707.06347.pdf) to estimate directly __&pi;*__. Another advantage of using this approach is that we can solve environments with continuous action spaces, unlike **Q-Learning** is no longer limited to discrete action spaces.
 
 Until now, the **Policy-Based Methods** seems to be a great solution if we compare them to the **Value-Based Methods** nevertheless, this approach has a problem. It turns out that when using **Policy-Based Methods** we have a high variance associated with it and therefore low convergence. We need something that reduces the high variance to let the model to converge, to do so we have another approach called **Actor-Critic Methods**.
 
@@ -90,7 +90,7 @@ Finally, the value of TAU **(&tau;)** for the soft update is equal to __1e-3__.
 
 The agent run 500 episodes for training, however, it was able to solve the environment after __200 episodes__ accomplishing the goal of, at least, 100 consecutive episodes with a reward of +30. The maximal average score reached for the agent was __+37.86__ during the episode 190. Below you can see a capture of the graph got in training. 
 
-![Training Graph](images/train.png)
+![Training Graph](images/descarga.png)
 
 
 ## 3. Ideas for Future Work
